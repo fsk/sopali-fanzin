@@ -4,6 +4,7 @@ function App() {
   const [activeItem, setActiveItem] = useState("Ana Sayfa");
   const [activeSubItem, setActiveSubItem] = useState("Haber");
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const logoSrc = `${import.meta.env.BASE_URL}images.jpeg`;
   const menuLeft = ["Ana Sayfa", "Subculture", "Store"];
   const menuRight = ["Donate", "Uye ol"];
   const subMenuItems = ["Haber", "Blog", "Ucuncu Sekme", "Dorduncu sekme"];
@@ -85,7 +86,7 @@ function App() {
           ))}
         </div>
 
-        <img src="/images.jpeg" alt="Sopali Fanzin Logo" className="main-logo" />
+        <img src={logoSrc} alt="Sopali Fanzin Logo" className="main-logo" />
 
         <button
           type="button"
